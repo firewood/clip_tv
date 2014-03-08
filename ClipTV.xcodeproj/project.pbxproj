@@ -23,6 +23,8 @@
 		20FADEED18CB480700A04D45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FADEC918CB480700A04D45 /* UIKit.framework */; };
 		20FADEF518CB480700A04D45 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20FADEF318CB480700A04D45 /* InfoPlist.strings */; };
 		20FADEF718CB480700A04D45 /* ClipTVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FADEF618CB480700A04D45 /* ClipTVTests.m */; };
+		20FADF0118CB806100A04D45 /* GracenoteACR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FADF0018CB806100A04D45 /* GracenoteACR.framework */; };
+		20FADF0318CB8D8F00A04D45 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FADF0218CB8D8F00A04D45 /* AdSupport.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		20FADEF218CB480700A04D45 /* ClipTVTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClipTVTests-Info.plist"; sourceTree = "<group>"; };
 		20FADEF418CB480700A04D45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		20FADEF618CB480700A04D45 /* ClipTVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClipTVTests.m; sourceTree = "<group>"; };
+		20FADF0018CB806100A04D45 /* GracenoteACR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GracenoteACR.framework; sourceTree = "<group>"; };
+		20FADF0218CB8D8F00A04D45 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20FADF0318CB8D8F00A04D45 /* AdSupport.framework in Frameworks */,
+				20FADF0118CB806100A04D45 /* GracenoteACR.framework in Frameworks */,
 				20FADEC818CB480700A04D45 /* CoreGraphics.framework in Frameworks */,
 				20FADECA18CB480700A04D45 /* UIKit.framework in Frameworks */,
 				20FADEC618CB480700A04D45 /* Foundation.framework in Frameworks */,
@@ -106,6 +112,8 @@
 		20FADEC418CB480700A04D45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				20FADF0218CB8D8F00A04D45 /* AdSupport.framework */,
+				20FADF0018CB806100A04D45 /* GracenoteACR.framework */,
 				20FADEC518CB480700A04D45 /* Foundation.framework */,
 				20FADEC718CB480700A04D45 /* CoreGraphics.framework */,
 				20FADEC918CB480700A04D45 /* UIKit.framework */,
@@ -398,6 +406,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/..",
+					/Users/maki/ios/ClipTV/ClipTV,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClipTV/ClipTV-Prefix.pch";
 				INFOPLIST_FILE = "ClipTV/ClipTV-Info.plist";
@@ -411,6 +424,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/..",
+					/Users/maki/ios/ClipTV/ClipTV,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClipTV/ClipTV-Prefix.pch";
 				INFOPLIST_FILE = "ClipTV/ClipTV-Info.plist";
@@ -480,6 +498,7 @@
 				20FADEFC18CB480700A04D45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20FADEFD18CB480700A04D45 /* Build configuration list for PBXNativeTarget "ClipTVTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +507,7 @@
 				20FADEFF18CB480700A04D45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

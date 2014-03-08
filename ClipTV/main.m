@@ -12,7 +12,14 @@
 
 int main(int argc, char * argv[])
 {
+#if __has_feature(objc_arc)
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
+#else
+    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+    int retVal = UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+    [pool release];
+    return retVal;
+#endif
 }
